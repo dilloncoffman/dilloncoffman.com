@@ -1,11 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Dillon Coffman`,
+    titleTemplate: `%s | Dillon Coffman`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    twitterUsername: `@_DillonCoffman_`,
+    image: `https://pbs.twimg.com/profile_images/1266034010901397506/RSZmaVNL_400x400.jpg`,
+    url: `https://www.dilloncoffman.com`
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,7 +30,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
+    {
+      resolve: `gatsby-plugin-chakra-ui`,
+      options: {
+        isResettingCSS: true,
+        isUsingColorMode: false,
+      },
+    }, // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
