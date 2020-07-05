@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Dillon Coffman`,
+    title: `dillon coffman`,
     titleTemplate: `%s | Dillon Coffman`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     twitterUsername: `@_DillonCoffman_`,
