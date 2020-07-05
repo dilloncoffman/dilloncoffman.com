@@ -68,6 +68,10 @@ export default {
       900: "#020D0A"
     }
   },
+  fonts: {
+    body: 'Quattrocento Sans, system-ui, sans-serif',
+    heading: 'Work Sans, Georgia'
+  },
   icons: {
     ...theme.icons,
     menu: {

@@ -36,7 +36,25 @@ module.exports = {
         isResettingCSS: true,
         isUsingColorMode: false,
       },
-    }, // this (optional) plugin enables Progressive Web App + Offline functionality
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Work Sans',
+            variable: true,
+            weights: ['300..800', '400..700']
+          },
+          {
+            family: 'Quattrocento Sans',
+            variable: true,
+            weights: ['400..700', '400..700']
+          }
+        ]
+      }
+    }
+    // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],

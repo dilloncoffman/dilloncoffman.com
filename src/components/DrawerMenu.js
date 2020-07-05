@@ -21,12 +21,11 @@ const DrawerMenu = () => {
 
   return (
     <>
-      <IconButton variant="outline" variantColor="white" aria-label="Open navigation menu" icon="menu" onClick={onOpen} />
+      <IconButton variant="outline" aria-label="Open navigation menu" icon="menu" onClick={onOpen} />
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-
           <DrawerHeader borderBottomWidth="1px">Drawer O'Links</DrawerHeader>
           <DrawerBody>
             <Stack spacing={8}>
