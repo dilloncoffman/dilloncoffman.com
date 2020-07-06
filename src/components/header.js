@@ -1,11 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Heading, Flex } from "@chakra-ui/core";
-import DrawerMenu from "./DrawerMenu";
+import { Heading, Flex } from "@chakra-ui/core"
+import DrawerMenu from "./DrawerMenu"
 
-const Header = (props) => {
-
+const Header = props => {
   return (
     <header
       style={{
@@ -37,7 +36,7 @@ const Header = (props) => {
         </Flex>
         <DrawerMenu />
       </Flex>
-    </header >
+    </header>
   )
 }
 Header.propTypes = {

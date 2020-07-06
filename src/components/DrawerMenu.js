@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link as GatsbyLink } from 'gatsby'
+import React, { useState } from "react"
+import { Link as GatsbyLink } from "gatsby"
 import {
   Box,
   Drawer,
@@ -8,52 +8,110 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Link,
   Icon,
   IconButton,
+  PseudoBox,
   Stack,
   useDisclosure,
-} from "@chakra-ui/core";
+} from "@chakra-ui/core"
 
 const DrawerMenu = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const [placement] = useState("right");
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [placement] = useState("right")
 
   return (
     <>
-      <IconButton variant="outline" aria-label="Open navigation menu" icon="menu" onClick={onOpen} />
+      <IconButton
+        variant="outline"
+        aria-label="Open navigation menu"
+        icon="menu"
+        onClick={onOpen}
+      />
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader borderBottomWidth="1px">Drawer O'Links</DrawerHeader>
+          <DrawerCloseButton
+            mt="6px"
+            _focus={{
+              outline: "none",
+              bg: "gray.200",
+              boxShadow: "outline",
+              borderRadius: 5,
+            }}
+          />
+          <DrawerHeader borderBottomWidth="1px">
+            <br />
+          </DrawerHeader>
           <DrawerBody>
             <Stack spacing={8}>
-              <Box>
-                <Link as={GatsbyLink} to="/">
+              <PseudoBox
+                py={2}
+                as={GatsbyLink}
+                to="/"
+                _hover={{ bg: "gray.200", borderRadius: 5 }}
+                _focus={{
+                  outline: "none",
+                  bg: "gray.200",
+                  boxShadow: "outline",
+                  borderRadius: 5,
+                }}
+              >
+                <Box px={4}>
                   <Icon name="home" color="black" mr="12px" size="24px" />
                   Home
-                </Link>
-              </Box>
-              <Box>
-                <Link as={GatsbyLink} to="/about">
+                </Box>
+              </PseudoBox>
+              <PseudoBox
+                py={2}
+                as={GatsbyLink}
+                to="/about"
+                _hover={{ bg: "gray.200", borderRadius: 5 }}
+                _focus={{
+                  outline: "none",
+                  bg: "gray.200",
+                  boxShadow: "outline",
+                  borderRadius: 5,
+                }}
+              >
+                <Box px={4}>
                   <Icon name="astronaut" color="black" mr="12px" size="24px" />
                   About
-                </Link>
-              </Box>
-              <Box>
-                <Link as={GatsbyLink} to="/music">
+                </Box>
+              </PseudoBox>
+              <PseudoBox
+                py={2}
+                as={GatsbyLink}
+                to="/music"
+                _hover={{ bg: "gray.200", borderRadius: 5 }}
+                _focus={{
+                  outline: "none",
+                  bg: "gray.200",
+                  boxShadow: "outline",
+                  borderRadius: 5,
+                }}
+              >
+                <Box px={4}>
                   <Icon name="music" color="black" mr="12px" size="24px" />
                   Music
-                </Link>
-              </Box>
-              <Box>
-                <Link as={GatsbyLink} to="/notes">
+                </Box>
+              </PseudoBox>
+              <PseudoBox
+                py={2}
+                as={GatsbyLink}
+                to="/notes"
+                _hover={{ bg: "gray.200", borderRadius: 5 }}
+                _focus={{
+                  outline: "none",
+                  bg: "gray.200",
+                  boxShadow: "outline",
+                  borderRadius: 5,
+                }}
+              >
+                <Box px={4}>
                   <Icon name="notes" color="black" mr="12px" size="24px" />
                   Notes
-                </Link>
-              </Box>
-
+                </Box>
+              </PseudoBox>
             </Stack>
           </DrawerBody>
         </DrawerContent>
@@ -62,4 +120,4 @@ const DrawerMenu = () => {
   )
 }
 
-export default DrawerMenu;
+export default DrawerMenu

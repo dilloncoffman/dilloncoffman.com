@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import { Box, CSSReset } from "@chakra-ui/core"
 import { ThemeProvider } from "emotion-theming"
-import radTheme from '../../rad-theme'
+import radTheme from "../../rad-theme"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -40,12 +40,11 @@ const Layout = ({ children }) => {
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()}, Built with
-          {` `}
+            {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
       </Box>
-
     </ThemeProvider>
   )
 }
