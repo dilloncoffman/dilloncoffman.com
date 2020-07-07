@@ -7,7 +7,9 @@ const MusicPage = () => {
   return (
     <Layout>
       <SEO title="Music" />
-      <Heading>Music</Heading>
+      <Heading as="h1" size="2xl">
+        Music
+      </Heading>
     </Layout>
   )
 }

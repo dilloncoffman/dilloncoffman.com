@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import { Box, CSSReset } from "@chakra-ui/core"
+import { Box, CSSReset, Flex, Link, Text } from "@chakra-ui/core"
 import { ThemeProvider } from "emotion-theming"
 import radTheme from "../../rad-theme"
 
@@ -38,11 +38,20 @@ const Layout = ({ children }) => {
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <Flex as="footer" justify="space-between">
+            {data.site.siteMetadata.title} © {new Date().getFullYear()}
+            <Text>
+              Built with
+              {` `}
+              <Link href="https://www.gatsbyjs.org" isExternal>
+                Gatsby
+              </Link>{" "}
+              &amp;{" "}
+              <Link href="https://chakra-ui.com/" isExternal>
+                Chakra UI
+              </Link>
+            </Text>
+          </Flex>
         </div>
       </Box>
     </ThemeProvider>
