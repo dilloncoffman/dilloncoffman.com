@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
             padding: `0 1.0875rem 1.45rem`,
           }}
         >
-          <main>{children}</main>
+          <main style={{ paddingTop: 85 }}>{children}</main>
           <Flex as="footer" justify="space-between">
             {data.site.siteMetadata.title} © {new Date().getFullYear()}
             <Text>

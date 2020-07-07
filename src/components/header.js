@@ -9,6 +9,10 @@ const Header = props => {
     <header
       style={{
         marginBottom: `1.45rem`,
+        position: "fixed",
+        right: 0,
+        left: 0,
+        zIndex: 999,
       }}
     >
       <Flex

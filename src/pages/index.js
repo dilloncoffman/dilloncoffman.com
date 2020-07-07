@@ -25,9 +25,8 @@ const IndexPage = ({ data }) => (
     </Text>
 
     {data.allMarkdownRemark.edges.map(({ node }) => (
-      <GatsbyLink to={node.fields.slug}>
+      <GatsbyLink key={node.id} to={node.fields.slug}>
         <MotionCard
-          key={node.id}
           bg="white"
           borderWidth="1px"
           borderColor="slate.500"
