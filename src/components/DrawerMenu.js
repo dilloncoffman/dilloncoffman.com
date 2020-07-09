@@ -22,6 +22,7 @@ const DrawerMenu = () => {
   return (
     <>
       <IconButton
+        style={{ backgroundColor: "transparent" }}
         variant="outline"
         aria-label="Open navigation menu"
         icon="menu"
@@ -43,21 +44,25 @@ const DrawerMenu = () => {
             <br />
           </DrawerHeader>
           <DrawerBody>
-            <Stack spacing={8}>
+            <Stack spacing={8} textTransform="uppercase">
               <PseudoBox
                 py={2}
                 as={GatsbyLink}
                 to="/"
-                _hover={{ bg: "gray.200", borderRadius: 5 }}
+                color="#001626"
+                _hover={{ bg: "gray.200", borderRadius: 5, color: "#004173" }}
                 _focus={{
                   outline: "none",
                   bg: "gray.200",
                   boxShadow: "outline",
                   borderRadius: 5,
+                  backgroundImage:
+                    "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #B3DEFF 1px, #B3DEFF 2px, rgba(0, 0, 0, 0) 20px)",
+                  color: "#004173",
                 }}
               >
                 <Box px={4}>
-                  <Icon name="home" color="black" mr="12px" size="24px" />
+                  <Icon name="home" mr="15px" size="30px" />
                   Home
                 </Box>
               </PseudoBox>
@@ -65,16 +70,20 @@ const DrawerMenu = () => {
                 py={2}
                 as={GatsbyLink}
                 to="/about"
-                _hover={{ bg: "gray.200", borderRadius: 5 }}
+                color="#001626"
+                _hover={{ bg: "gray.200", borderRadius: 5, color: "#004173" }}
                 _focus={{
                   outline: "none",
                   bg: "gray.200",
                   boxShadow: "outline",
                   borderRadius: 5,
+                  backgroundImage:
+                    "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #B3DEFF 1px, #B3DEFF 2px, rgba(0, 0, 0, 0) 20px)",
+                  color: "#B3D004173EFF",
                 }}
               >
                 <Box px={4}>
-                  <Icon name="astronaut" color="black" mr="12px" size="24px" />
+                  <Icon name="astronaut" mr="15px" size="30px" />
                   About
                 </Box>
               </PseudoBox>
@@ -82,16 +91,20 @@ const DrawerMenu = () => {
                 py={2}
                 as={GatsbyLink}
                 to="/music"
-                _hover={{ bg: "gray.200", borderRadius: 5 }}
+                color="#001626"
+                _hover={{ bg: "gray.200", borderRadius: 5, color: "#004173" }}
                 _focus={{
                   outline: "none",
                   bg: "gray.200",
                   boxShadow: "outline",
                   borderRadius: 5,
+                  backgroundImage:
+                    "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #B3DEFF 1px, #B3DEFF 2px, rgba(0, 0, 0, 0) 20px)",
+                  color: "#004173",
                 }}
               >
                 <Box px={4}>
-                  <Icon name="music" color="black" mr="12px" size="24px" />
+                  <Icon name="music" mr="15px" size="30px" />
                   Music
                 </Box>
               </PseudoBox>
@@ -99,16 +112,20 @@ const DrawerMenu = () => {
                 py={2}
                 as={GatsbyLink}
                 to="/notes"
-                _hover={{ bg: "gray.200", borderRadius: 5 }}
+                color="#001626"
+                _hover={{ bg: "gray.200", borderRadius: 5, color: "#004173" }}
                 _focus={{
                   outline: "none",
                   bg: "gray.200",
                   boxShadow: "outline",
                   borderRadius: 5,
+                  backgroundImage:
+                    "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #B3DEFF 1px, #B3DEFF 2px, rgba(0, 0, 0, 0) 20px)",
+                  color: "#004173",
                 }}
               >
                 <Box px={4}>
-                  <Icon name="notes" color="black" mr="12px" size="24px" />
+                  <Icon name="notes" mr="15px" size="30px" />
                   Notes
                 </Box>
               </PseudoBox>

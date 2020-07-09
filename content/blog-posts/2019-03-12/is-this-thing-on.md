@@ -5,6 +5,7 @@ date: "2019-03-12"
 author: "dillon"
 category: "life"
 ---
+
 ## Welcome to my site👨‍🚀
 
 I've planned to begin posting here for the past couple months and I finally decided to do it. Things have been busy, but that's no excuse not to start! I want to make this a regular thing and use these posts to chronicle everything I'm working on, learning, reading, or listening to. Tim Ferriss' [5-Bullet Friday](https://go.tim.blog/5-bullet-friday-1/) newsletter has inspired me to do something similar here. If you haven't checked out any of Tim's books or podcast episodes, I would highly recommend them!
@@ -19,7 +20,7 @@ This week I'm battling three exams, a quiz, and a project presentation but that'
 
 ## What am I reading?
 
-Right now I'm shuffling between a few books, but am mostly reading *Atomic Habits* by James Clear and *MAKE Book* by Pieter Levels. *Atomic Habits* focuses on **surprise** - breaking down what habits really are and how to manage our own based on their smaller, more manageable parts. *MAKE Book* is about learning how to bootstrap profitable startups without all the bells and whistles that come with venture capital.
+Right now I'm shuffling between a few books, but am mostly reading _Atomic Habits_ by James Clear and _MAKE Book_ by Pieter Levels. _Atomic Habits_ focuses on **surprise** - breaking down what habits really are and how to manage our own based on their smaller, more manageable parts. _MAKE Book_ is about learning how to bootstrap profitable startups without all the bells and whistles that come with venture capital.
 
 ## What am I listening to?
 

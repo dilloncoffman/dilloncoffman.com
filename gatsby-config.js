@@ -58,25 +58,31 @@ module.exports = {
     {
       resolve: `gatsby-plugin-chakra-ui`,
       options: {
-        isResettingCSS: true,
+        isResettingCSS: false,
         isUsingColorMode: false,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts-v2`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: "Work Sans",
+    //         variable: true,
+    //         weights: ["300..800", "400..700"],
+    //       },
+    //       {
+    //         family: "Quattrocento Sans",
+    //         variable: true,
+    //         weights: ["400..700", "400..700"],
+    //       },
+    //     ],
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-fonts-v2`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        fonts: [
-          {
-            family: "Work Sans",
-            variable: true,
-            weights: ["300..800", "400..700"],
-          },
-          {
-            family: "Quattrocento Sans",
-            variable: true,
-            weights: ["400..700", "400..700"],
-          },
-        ],
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

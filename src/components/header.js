@@ -26,12 +26,16 @@ const Header = props => {
         {...props}
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={"-.1rem"}>
+          <Heading as="h1" size="lg" letterSpacing={"-.1rem"} m={0}>
             <Link
               to="/"
               style={{
-                color: `white`,
-                textDecoration: `none`,
+                color: "white",
+                textDecoration: "none",
+                textShadow: "none",
+                textUnderlinePosition: "none",
+                backgroundImage:
+                  "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #B3DEFF 1px, #B3DEFF 2px, rgba(0, 0, 0, 0) 20px)",
               }}
             >
               {props.siteTitle}

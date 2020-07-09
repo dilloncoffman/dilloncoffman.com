@@ -1,9 +1,9 @@
 ---
-title: 'This Is Still A Thing'
-cover: 'https://images.unsplash.com/photo-1559132252-594e76c41a6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-date: '2019-07-31'
-author: 'dillon'
-category: 'life'
+title: "This Is Still A Thing"
+cover: "https://images.unsplash.com/photo-1559132252-594e76c41a6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+date: "2019-07-31"
+author: "dillon"
+category: "life"
 ---
 
 ## Magic 🎇

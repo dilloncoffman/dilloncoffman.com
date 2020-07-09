@@ -1,9 +1,9 @@
 ---
-title: 'Partial Impact Theory'
-cover: 'https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
-date: '2019-08-28'
-author: 'dillon'
-category: 'life'
+title: "Partial Impact Theory"
+cover: "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+date: "2019-08-28"
+author: "dillon"
+category: "life"
 ---
 
 ## Echo
@@ -69,4 +69,4 @@ Last week I worked on React Native gestures, navigation, and animations using [u
 
 If you enjoy these posts and feel so inclined to support me, I would really appreciate it! Feel free to buy me a coffee 😄
 
-<a href="https://www.buymeacoffee.com/dilloncoffman" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+<a href="https://www.buymeacoffee.com/dilloncoffman" target="_blank" rel="noopener"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>

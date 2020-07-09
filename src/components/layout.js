@@ -27,7 +27,6 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={radTheme}>
-      <CSSReset />
       <Box bg="slate.50" minHeight="100vh" color="black">
         <Header siteTitle={data.site.siteMetadata.title} />
         <div

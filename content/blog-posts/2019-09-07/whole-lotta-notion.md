@@ -1,9 +1,9 @@
 ---
-title: 'Whole Lotta Notion'
-cover: 'https://images.unsplash.com/photo-1542596081-a7c3fc19961e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80'
-date: '2019-09-07'
-author: 'dillon'
-category: 'life'
+title: "Whole Lotta Notion"
+cover: "https://images.unsplash.com/photo-1542596081-a7c3fc19961e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+date: "2019-09-07"
+author: "dillon"
+category: "life"
 ---
 
 ## Notion ✍️
@@ -34,9 +34,9 @@ My plan for [PlayRight](https://github.com/dilloncoffman/PlayRight) is still to 
 
 - Books
   - [The Laws of Human Nature](https://www.amazon.com/Laws-Human-Nature-Robert-Greene/dp/0525428143) by Robert Greene
-      - Pericles of Athens
+    - Pericles of Athens
   - [No Death, No Fear](https://www.amazon.com/No-Death-Fear-Comforting-Wisdom/dp/1573223336) by Thich Nhat Hanh
-      - Impermanence
+    - Impermanence
 - Development
   - [Fullstack Serverless](https://dev.to/kkemple/fullstack-serverless-440e) by [Kurt Kemple](https://twitter.com/kurtiskemple)
   - [Three Tips For Balancing Side Projects and a Full-Time Job](https://dev.to/ladybug/three-tips-for-balancing-side-projects-and-a-full-time-job-39e0)
@@ -71,4 +71,4 @@ My plan for [PlayRight](https://github.com/dilloncoffman/PlayRight) is still to 
 
 If you enjoy these posts and feel so inclined to support me, I would really appreciate it! Feel free to buy me a coffee 😄
 
-<a href="https://www.buymeacoffee.com/dilloncoffman" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+<a href="https://www.buymeacoffee.com/dilloncoffman" target="_blank" rel="noopener"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
