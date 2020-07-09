@@ -34,9 +34,9 @@ My plan for [PlayRight](https://github.com/dilloncoffman/PlayRight) is still to 
 
 - Books
   - [The Laws of Human Nature](https://www.amazon.com/Laws-Human-Nature-Robert-Greene/dp/0525428143) by Robert Greene
-    - Pericles of Athens
+      - Pericles of Athens
   - [No Death, No Fear](https://www.amazon.com/No-Death-Fear-Comforting-Wisdom/dp/1573223336) by Thich Nhat Hanh
-    - Impermanence
+      - Impermanence
 - Development
   - [Fullstack Serverless](https://dev.to/kkemple/fullstack-serverless-440e) by [Kurt Kemple](https://twitter.com/kurtiskemple)
   - [Three Tips For Balancing Side Projects and a Full-Time Job](https://dev.to/ladybug/three-tips-for-balancing-side-projects-and-a-full-time-job-39e0)

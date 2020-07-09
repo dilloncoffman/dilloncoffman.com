@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => (
           mb={5}
         >
           <Box p={6}>
-            <Heading as="h3" size="lg" color="slate.800">
+            <Heading as="h3" size="lg" color="slate.800" mt="1.45rem">
               {node.frontmatter.title}
             </Heading>
             <Flex color="slate.400" fontSize="sm" fontWeight="bold" mb={2}>
