@@ -18,41 +18,42 @@ Even though I've decided to work primarily on the design before developing core 
 
 ## Reading
 
-* ### Books
+- ### Books
 
-    I recently picked up [*Essays and Aphorisms*](https://www.amazon.com/Essays-Aphorisms-Penguin-Classics-Schopenhauer/dp/0140442278) by [Arthur Schopenhauer](https://en.wikipedia.org/wiki/Arthur_Schopenhauer) and [*Existentialism is a Humanism*](https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm) by [Jean-Paul Sartre](https://en.wikipedia.org/wiki/Jean-Paul_Sartre). Schopenhauer focuses on metaphysics while Sartre was a key figure of existentialist philosophy in the 20th century. Metaphysics and existentialism as philosophies fit well together. Metaphysics concerns itself with the nature of existence and being itself driven by a certain kind of uncontrollable will (we don't make our choices, they're made for us) while existentialism focuses on the individual as developed through one's own will (while not entirely free will). Schopenhauer believes that the [default state of being is to restlessly strive for things](https://youtu.be/JflxsOQxFNA?t=492) (a new job, a new car, etc.). Even though these things might not necessarily be what fulfills us in the long run, this seems to be what most people are driven by subconciously. Metaphysics can be thought of as an umbrella under which the philosophy of existentialism and many others exist. In fact, in Aristotle's [*Metaphysics*](http://classics.mit.edu/Aristotle/metaphysics.html) he asserts that:
+  I recently picked up [_Essays and Aphorisms_](https://www.amazon.com/Essays-Aphorisms-Penguin-Classics-Schopenhauer/dp/0140442278) by [Arthur Schopenhauer](https://en.wikipedia.org/wiki/Arthur_Schopenhauer) and [_Existentialism is a Humanism_](https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm) by [Jean-Paul Sartre](https://en.wikipedia.org/wiki/Jean-Paul_Sartre). Schopenhauer focuses on metaphysics while Sartre was a key figure of existentialist philosophy in the 20th century. Metaphysics and existentialism as philosophies fit well together. Metaphysics concerns itself with the nature of existence and being itself driven by a certain kind of uncontrollable will (we don't make our choices, they're made for us) while existentialism focuses on the individual as developed through one's own will (while not entirely free will). Schopenhauer believes that the [default state of being is to restlessly strive for things](https://youtu.be/JflxsOQxFNA?t=492) (a new job, a new car, etc.). Even though these things might not necessarily be what fulfills us in the long run, this seems to be what most people are driven by subconciously. Metaphysics can be thought of as an umbrella under which the philosophy of existentialism and many others exist. In fact, in Aristotle's [_Metaphysics_](http://classics.mit.edu/Aristotle/metaphysics.html) he asserts that:
 
-    > "The investigation of the truth is in one way hard, in another easy. An indication of this is found in the fact that no one is able to attain the truth adequately, while, on the other hand, no one fails entirely, but everyone says something true about the nature of all things, and while individually they contribute little or nothing to the truth, by the union of all a considerable amount is amassed."
+  > "The investigation of the truth is in one way hard, in another easy. An indication of this is found in the fact that no one is able to attain the truth adequately, while, on the other hand, no one fails entirely, but everyone says something true about the nature of all things, and while individually they contribute little or nothing to the truth, by the union of all a considerable amount is amassed."
 
-    Aristotle also believes that with the understanding of metaphysics came the ability to philosophize and reason about other niche areas of life:
+  Aristotle also believes that with the understanding of metaphysics came the ability to philosophize and reason about other niche areas of life:
 
-    > "For it is owing to their wonder that men both now begin and at first began to philosophize."
+  > "For it is owing to their wonder that men both now begin and at first began to philosophize."
 
-* ### Development
+- ### Development
 
-    [How I Went From Indie Lurker To Indie Hacker](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f)
+  [How I Went From Indie Lurker To Indie Hacker](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f)
 
-    [19 Tips For Software Engineers In 2019](https://dev.to/emmawedekind/19-tips-for-software-engineers-in-2019-4okm)
+  [19 Tips For Software Engineers In 2019](https://dev.to/emmawedekind/19-tips-for-software-engineers-in-2019-4okm)
 
-    [15 Git Commands You May Not Know](https://dev.to/zaiste/15-git-commands-you-may-not-know-4a8j)
+  [15 Git Commands You May Not Know](https://dev.to/zaiste/15-git-commands-you-may-not-know-4a8j)
 
 ## Quote I'm digging...
+
 > “Man can do what he wills but he cannot will what he wills.” ~ Arthur Schopenhauer
 
 ## Listening To
 
-* ### Podcasts
+- ### Podcasts
 
-    [Philosophize This!](https://overcast.fm/itunes659155419/philosophize-this)
+  [Philosophize This!](https://overcast.fm/itunes659155419/philosophize-this)
 
-    [Indie Hackers](https://overcast.fm/itunes1206165808/the-indie-hackers-podcast)
+  [Indie Hackers](https://overcast.fm/itunes1206165808/the-indie-hackers-podcast)
 
-    [React Native](https://overcast.fm/itunes1058647602/react-native-radio)
+  [React Native](https://overcast.fm/itunes1058647602/react-native-radio)
 
-* ### Music
+- ### Music
 
-    ["Family and Genus" by Shakey Graves](https://www.youtube.com/watch?v=INTh4TbExmw)
+  ["Family and Genus" by Shakey Graves](https://www.youtube.com/watch?v=INTh4TbExmw)
 
-    ["No Place To Fall" by Kevin Morby](https://www.youtube.com/watch?v=mmfxD01tH8g)
+  ["No Place To Fall" by Kevin Morby](https://www.youtube.com/watch?v=mmfxD01tH8g)
 
-    ["The Numbers" by Radiohead](https://www.youtube.com/watch?v=Ti6qhk3tX2s)
+  ["The Numbers" by Radiohead](https://www.youtube.com/watch?v=Ti6qhk3tX2s)

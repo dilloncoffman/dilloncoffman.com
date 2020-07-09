@@ -33,9 +33,9 @@ To simplify my time, I narrowed down my own goals:
 - Write a blog post at least once every two weeks for the rest of summer 🖋️
 - Finish the design of [PlayRight](https://github.com/dilloncoffman/PlayRight) 🎨
   - Start back up development
-      - React Native
-      - AWS Amplify
-      - Lottie Animations
+    - React Native
+    - AWS Amplify
+    - Lottie Animations
   - Keep a log of _accurate_ tabs of songs I learn along the way
 
 ## Update

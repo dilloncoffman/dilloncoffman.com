@@ -1,5 +1,5 @@
 ---
-title: "Woohooo queryable markdown frontmatter"
+title: "New Ground"
 cover: "url to image cover"
 date: "2020-07-06"
 ---
