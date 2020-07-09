@@ -62,23 +62,6 @@ module.exports = {
         isUsingColorMode: false,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-fonts-v2`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: "Work Sans",
-    //         variable: true,
-    //         weights: ["300..800", "400..700"],
-    //       },
-    //       {
-    //         family: "Quattrocento Sans",
-    //         variable: true,
-    //         weights: ["400..700", "400..700"],
-    //       },
-    //     ],
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
