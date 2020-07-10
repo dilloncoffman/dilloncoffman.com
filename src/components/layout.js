@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import { Box, Flex, Link, Text } from "@chakra-ui/core"
+import { Box } from "@chakra-ui/core"
 import { ThemeProvider } from "emotion-theming"
 import radTheme from "../../rad-theme"
 import Footer from "./Footer"

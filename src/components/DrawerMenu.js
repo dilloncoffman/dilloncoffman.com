@@ -39,6 +39,7 @@ const DrawerMenu = () => {
               bg: "gray.200",
               boxShadow: "outline",
               borderRadius: 5,
+              color: "#004173",
             }}
           />
           <DrawerHeader borderBottomWidth="1px">
