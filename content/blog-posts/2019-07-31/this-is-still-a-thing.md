@@ -14,7 +14,7 @@ It's been awhile.. a lot of things have happened in a little over three weeks. P
 
 She's a resilient little creature and I'm glad she's okay🐕. The following weekend I got an email from Apple about a battery recall for 2015-2017 MacBook Pros, and so there went my computer for almost a week! Yesterday was my birthday so that's pretty neat 😎 and my internship is going well 👨‍💻 I spent a lot of time reading while my MacBook was away and got some guitar playing in. Check it:
 
-#### "Under My Skin" by Briston Maroney
+## "Under My Skin" by Briston Maroney
 
 <video width="100%" height="300" controls>
     <source src="under_my_skin.mov" type="video/mp4">
@@ -38,16 +38,16 @@ What makes Gatsby themes so rad is that if someone wanted to add on to this list
 
 - ### Music
 
-  ["Too Young To Burn" by Sonny and the Sunsets](https://www.youtube.com/watch?v=Un2xYzvAqhw)
+  - ["Too Young To Burn" by Sonny and the Sunsets](https://www.youtube.com/watch?v=Un2xYzvAqhw)
 
-  ["Rare Hearts" by The Growlers](https://www.youtube.com/watch?v=qijpu8CA-U0)
+  - ["Rare Hearts" by The Growlers](https://www.youtube.com/watch?v=qijpu8CA-U0)
 
-  ["Wednesday" by Good Morning](https://www.youtube.com/watch?v=ISkyLjAcFFQ)
+  - ["Wednesday" by Good Morning](https://www.youtube.com/watch?v=ISkyLjAcFFQ)
 
 - ### Podcasts
 
-  [Syntax FM](https://overcast.fm/itunes1253186678/syntax-tasty-web-development-treats)
+  - [Syntax FM](https://overcast.fm/itunes1253186678/syntax-tasty-web-development-treats)
 
-  [The Ground Up Show](https://overcast.fm/itunes1203518464/the-ground-up-show)
+  - [The Ground Up Show](https://overcast.fm/itunes1203518464/the-ground-up-show)
 
-  [Philosophize This!](https://overcast.fm/itunes659155419/philosophize-this)
+  - [Philosophize This!](https://overcast.fm/itunes659155419/philosophize-this)

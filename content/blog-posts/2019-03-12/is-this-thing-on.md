@@ -1,6 +1,7 @@
 ---
 title: "Is This Thing On?"
 cover: "https://media.giphy.com/media/xT1R9PG5GAszOVSxgY/giphy.gif"
+coverCredit: 'https://www.google.com'
 date: "2019-03-12"
 author: "dillon"
 category: "life"

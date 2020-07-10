@@ -47,7 +47,9 @@ const IndexPage = ({ data }) => (
             <Flex color="slate.400" fontSize="sm" fontWeight="bold" mb={2}>
               <Text as="span">{node.timeToRead} minute read</Text>
               <Divider borderColor="slate.200" orientation="vertical" />
-              <Text as="span">{node.frontmatter.date.toUpperCase()}</Text>
+              <Text as="span" textTransform="uppercase">
+                {node.frontmatter.date}
+              </Text>
             </Flex>
             <Text>{node.excerpt}</Text>
           </Box>
