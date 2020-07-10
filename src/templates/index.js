@@ -1,27 +1,49 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Box, Divider, Heading, Text, Flex, PseudoBox } from "@chakra-ui/core"
+import Pager from "../components/Pager"
+import {
+  Box,
+  Divider,
+  Heading,
+  Image,
+  Text,
+  Flex,
+  PseudoBox,
+} from "@chakra-ui/core"
 import { Link as GatsbyLink, graphql } from "gatsby"
 import { motion } from "framer-motion"
 
 const MotionCard = motion.custom(PseudoBox)
 
-const IndexPage = ({ data }) => (
+const Blog = ({ data, pageContext }) => (
   <Layout>
     <SEO title="Home" />
-    <Heading as="h1" size="2xl">
-      Dillon Coffman
-    </Heading>
-    <Text>Developer &amp; Musician</Text>
+    <Flex alignItems="center">
+      <Image
+        display={["none", "none", "block", "block"]}
+        m={0}
+        rounded="full"
+        size={["50px", "75px", "125px", "150px"]}
+        src="https://pbs.twimg.com/profile_images/1266034010901397506/RSZmaVNL_400x400.jpg"
+        alt="Segun Adebayo"
+      />
+      <Flex justifyContent="center" flexDirection="column" ml={[0, 0, 10, 10]}>
+        <Heading as="h1" size="2xl">
+          Dillon Coffman
+        </Heading>
+        <Text>Developer &amp; Musician</Text>
+      </Flex>
+    </Flex>
+
     <Divider borderColor="slate.200" />
 
     <Heading as="h2" size="xl">
       Blog
     </Heading>
     <Text>
-      {data.allMarkdownRemark.totalCount} Post
-      {data.allMarkdownRemark.totalCount === 1 ? <></> : <>s</>}
+      Page {pageContext.humanPageNumber} of {pageContext.numberOfPages}
     </Text>
 
     {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -56,12 +78,22 @@ const IndexPage = ({ data }) => (
         </MotionCard>
       </GatsbyLink>
     ))}
+    <Pager pageContext={pageContext} />
   </Layout>
 )
 
+Blog.propTypes = {
+  data: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired,
+}
+
 export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  query($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      skip: $skip
+      limit: $limit
+    ) {
       totalCount
       edges {
         node {
@@ -81,4 +113,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default Blog

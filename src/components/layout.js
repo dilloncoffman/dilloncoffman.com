@@ -13,6 +13,7 @@ import Header from "./header"
 import { Box, Flex, Link, Text } from "@chakra-ui/core"
 import { ThemeProvider } from "emotion-theming"
 import radTheme from "../../rad-theme"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,21 +38,8 @@ const Layout = ({ children }) => {
           }}
         >
           <main style={{ paddingTop: 85 }}>{children}</main>
-          <Flex as="footer" justify="space-between">
-            {data.site.siteMetadata.title} © {new Date().getFullYear()}
-            <Text>
-              Built with
-              {` `}
-              <Link href="https://www.gatsbyjs.org" isExternal>
-                Gatsby
-              </Link>{" "}
-              &amp;{" "}
-              <Link href="https://chakra-ui.com/" isExternal>
-                Chakra UI
-              </Link>
-            </Text>
-          </Flex>
         </div>
+        <Footer siteTitle={data.site.siteMetadata.title} />
       </Box>
     </ThemeProvider>
   )

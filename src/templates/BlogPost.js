@@ -15,7 +15,7 @@ import {
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
-  console.log(post)
+
   return (
     <Layout>
       <SEO title="Music" />

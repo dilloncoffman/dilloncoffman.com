@@ -33,6 +33,7 @@ const DrawerMenu = () => {
         <DrawerContent>
           <DrawerCloseButton
             mt="6px"
+            _hover={{ bg: "gray.200", borderRadius: 5, color: "#004173" }}
             _focus={{
               outline: "none",
               bg: "gray.200",

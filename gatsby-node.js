@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 const path = require(`path`)
+const { paginate } = require(`gatsby-awesome-pagination`)
+
 const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -21,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // **Note:** The graphql function call returns a Promise
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
   const { createPage } = actions
-  const result = await graphql(`
+  const blogPosts = await graphql(`
     query {
       allMarkdownRemark {
         edges {
@@ -34,7 +36,17 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+
+  // gatsby-awesome-pagination
+  paginate({
+    createPage,
+    items: blogPosts.data.allMarkdownRemark.edges,
+    itemsPerPage: 3,
+    pathPrefix: "/",
+    component: path.resolve(`src/templates/index.js`),
+  })
+
+  blogPosts.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/BlogPost.js`),
