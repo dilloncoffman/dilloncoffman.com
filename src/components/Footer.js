@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex, Link, Text } from "@chakra-ui/core"
+import { Box, Flex, Link, Text } from "@chakra-ui/core"
 
 const Footer = ({ siteTitle }) => (
   <Flex
@@ -11,6 +11,13 @@ const Footer = ({ siteTitle }) => (
     fontSize={["sm", "md", "lg", "xl"]}
   >
     {siteTitle} © {new Date().getFullYear()}
+    <Box>
+      Proudly published with
+      {` `}
+      <Link href="https://www.netlify.com/" isExternal>
+        Netlify
+      </Link>{" "}
+    </Box>
     <Text>
       Built with
       {` `}

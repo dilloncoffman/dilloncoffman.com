@@ -14,6 +14,8 @@ import {
 } from "@chakra-ui/core"
 import { Link as GatsbyLink, graphql } from "gatsby"
 import { motion } from "framer-motion"
+import { SocialIcon } from "react-social-icons"
+import "./index.css"
 
 const MotionCard = motion.custom(PseudoBox)
 
@@ -27,20 +29,47 @@ const Blog = ({ data, pageContext }) => (
         rounded="full"
         size={["50px", "75px", "125px", "150px"]}
         src="https://pbs.twimg.com/profile_images/1266034010901397506/RSZmaVNL_400x400.jpg"
-        alt="Segun Adebayo"
+        alt="Dillon Coffman"
       />
       <Flex justifyContent="center" flexDirection="column" ml={[0, 0, 10, 10]}>
         <Heading as="h1" size="2xl">
           Dillon Coffman
         </Heading>
-        <Text>Developer &amp; Musician</Text>
+        <Box>
+          <Text display="inline" fontWeight="bold" fontSize={[17, 17, 22, 24]}>
+            Developer &amp; Musician
+          </Text>
+          <SocialIcon
+            className="my-social-icon"
+            bgColor="#305479"
+            url="https://twitter.com/_dilloncoffman_"
+            style={{
+              height: 50,
+              width: 50,
+              marginLeft: 10,
+            }}
+          />
+          <SocialIcon
+            className="my-social-icon"
+            bgColor="#305479"
+            url="https://github.com/dilloncoffman"
+            style={{
+              height: 50,
+              width: 50,
+              marginLeft: 10,
+            }}
+          />
+        </Box>
       </Flex>
     </Flex>
 
     <Divider borderColor="slate.200" />
 
     <Heading as="h2" size="xl">
-      Blog
+      Digital Garden{" "}
+      <span role="img" aria-label="Emoji of a seedling">
+        🌱
+      </span>
     </Heading>
     <Text>
       Page {pageContext.humanPageNumber} of {pageContext.numberOfPages}

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `dillon coffman`,
     titleTemplate: `%s | Dillon Coffman`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Dillon Coffman – I develop websites and applications related to music. Feel free to reach out if you have an idea for a new site or music venture, I'd be happy to hear it and help in anyway I can!`,
     twitterUsername: `@_DillonCoffman_`,
     image: `https://pbs.twimg.com/profile_images/1266034010901397506/RSZmaVNL_400x400.jpg`,
     url: `https://www.dilloncoffman.com`,
@@ -14,6 +14,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-172408693-1",
+        head: true,
       },
     },
     {
@@ -51,7 +58,7 @@ module.exports = {
         short_name: `Dillon Coffman`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {

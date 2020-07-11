@@ -18,7 +18,7 @@ export default function BlogPost({ data }) {
 
   return (
     <Layout>
-      <SEO title="Music" />
+      <SEO title={post.frontmatter.title} />
       <PseudoBox
         bg="white"
         borderWidth="1px"
@@ -29,10 +29,10 @@ export default function BlogPost({ data }) {
       >
         <Flex
           height={[
-            "28vh", // base
-            "35vh", // 480px upwards
-            "40vh", // 768px upwards
-            "45vh", // 992px upwards
+            "17vh", // base
+            "25vh", // 480px upwards
+            "35vh", // 768px upwards
+            "40vh", // 992px upwards
           ]}
           p={5}
           justifyContent="flex-start"
