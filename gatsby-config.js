@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `dillon coffman`,
     titleTemplate: `%s | Dillon Coffman`,
-    description: `Dillon Coffman – I develop websites and applications related to music. Feel free to reach out if you have an idea for a new site or music venture, I'd be happy to hear it and help in anyway I can!`,
+    description: `Dillon Coffman is a developer who loves to push the limit and work with cutting-edge technology. Recently out of university, Dillon is excited to work alongside others to build apps that make a difference. In his free time he enjoys playing guitar and reading about everything from how to bootstrap a startup business to ancient philosophy. ~ Totally Real 3rd Person`,
     twitterUsername: `@_DillonCoffman_`,
     image: `https://pbs.twimg.com/profile_images/1266034010901397506/RSZmaVNL_400x400.jpg`,
     url: `https://www.dilloncoffman.com`,

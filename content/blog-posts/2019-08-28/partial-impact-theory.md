@@ -12,14 +12,6 @@ Yo! A little over a week ago I finished up my internship and just started my sen
 
 Outside of work I've been reading and playing guitar as usual 😜. I recently picked up [No Death, No Fear: Comforting Wisdom for Life](https://www.amazon.com/No-Death-Fear-Comforting-Wisdom/dp/1573223336) and highly recommend it. My parents took me on a sweet [City Brew Tour](citybrewtours.com/pittsburgh/) in the burgh for the weekend following my birthday.
 
-### "Lost In The Light" by The Bahamas
-
-<video width="100%" height="300" controls>
-    <source src="lostinthelight.mov" type="video/mp4">
-</video>
-
-<hr>
-
 ## Development & Design 👨‍💻
 
 Since I've started my senior year, I'm trying to evaluate how I can continue to work on personal projects and still be successful in my classes. It's easy for me to jump from one project idea to the next because there's so many cool technologies out there to use. My main goal is still [PlayRight](https://github.com/dilloncoffman/PlayRight) and the design/prototype for it. I plan to recreate my [current Adobe XD prototype](https://xd.adobe.com/view/f18a97f9-cf07-4bbe-4dc6-77cee660af36-87bb/) in [Figma](https://www.figma.com/) and go from there. A few weeks ago I planned to create a Gatsby theme for artists and got busy with work (go figure!) but check out [this theme](https://www.gatsbyjs.org/packages/gatsby-theme-musician/) [Eka](https://twitter.com/ekafyi) already built!

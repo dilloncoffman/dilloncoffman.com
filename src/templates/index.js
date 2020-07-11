@@ -21,7 +21,7 @@ const MotionCard = motion.custom(PseudoBox)
 
 const Blog = ({ data, pageContext }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" image="/../../daisydillon.jpg" />
     <Flex alignItems="center">
       <Image
         display={["none", "none", "block", "block"]}
