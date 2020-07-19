@@ -7,7 +7,7 @@ const NotesPage = () => {
   return (
     <Layout>
       <SEO title="Notes" />
-      <Heading as="h1" size="2xl">
+      <Heading as="h1" size="xl" mt={[2, 5, 5, 8]}>
         Notes
       </Heading>
     </Layout>
