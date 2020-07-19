@@ -3,7 +3,6 @@ import { Box, Badge, Flex, PseudoBox } from "@chakra-ui/core"
 import { motion } from "framer-motion"
 import moment from "moment"
 import Img from "gatsby-image"
-import "../css/music.css"
 
 const MotionCard = motion.custom(PseudoBox)
 

@@ -7,70 +7,99 @@ import {
   Box,
   Divider,
   Heading,
-  Image,
   Text,
   Flex,
   PseudoBox,
+  Link,
 } from "@chakra-ui/core"
 import { Link as GatsbyLink, graphql } from "gatsby"
+import Img from "gatsby-image"
 import { motion } from "framer-motion"
 import { SocialIcon } from "react-social-icons"
-import "./index.css"
+import "../css/index.css"
 
 const MotionCard = motion.custom(PseudoBox)
 
 const Blog = ({ data, pageContext }) => (
   <Layout>
     <SEO title="Home" image="/../../daisydillon.jpg" />
-    <Flex alignItems="center">
-      <Image
-        display={["none", "none", "block", "block"]}
-        m={0}
-        rounded="full"
-        size={["50px", "75px", "125px", "150px"]}
-        src="https://pbs.twimg.com/profile_images/1266034010901397506/RSZmaVNL_400x400.jpg"
-        alt="Dillon Coffman"
-      />
-      <Flex justifyContent="center" flexDirection="column" ml={[0, 0, 10, 10]}>
-        <Heading as="h1" size="2xl">
-          Dillon Coffman
-        </Heading>
-        <Box>
-          <Text display="inline" fontWeight="bold" fontSize={[17, 17, 22, 24]}>
-            Developer &amp; Musician
-          </Text>
-          <SocialIcon
-            className="my-social-icon"
-            bgColor="#305479"
-            url="https://twitter.com/_dilloncoffman_"
-            style={{
-              height: 50,
-              width: 50,
-              marginLeft: 10,
-            }}
-          />
-          <SocialIcon
-            className="my-social-icon"
-            bgColor="#305479"
-            url="https://github.com/dilloncoffman"
-            style={{
-              height: 50,
-              width: 50,
-              marginLeft: 10,
-            }}
-          />
-        </Box>
-      </Flex>
+    <Img
+      fluid={data.profilePic.childImageSharp.fluid}
+      imgStyle={{
+        marginTop: 30,
+        marginBottom: 0,
+        height: 200,
+        width: 200,
+        borderRadius: 100,
+        left: "50%",
+        transform: "translateX(-50%)",
+      }}
+      style={{
+        maxHeight: 230,
+      }}
+    />
+    <Flex
+      justifyContent="center"
+      alignItems="center"
+      flexDirection="column"
+      mb={30}
+    >
+      {/* <Img
+          fluid={data.profilePic.childImageSharp.fluid}
+          imgStyle={{ height: 200, width: 200, borderRadius: 100 }}
+          style={{
+            paddingTop: 100,
+            maxHeight: 200,
+          }}
+        /> */}
+
+      <Heading as="h1" size="2xl" mt={[2, 5, 5, 5]}>
+        Dillon Coffman
+      </Heading>
+
+      <Box>
+        <Text display="inline" fontWeight="bold" fontSize={[17, 17, 22, 24]}>
+          Developer &amp; Musician
+        </Text>
+        <SocialIcon
+          className="my-social-icon no-hover-gradient"
+          bgColor="#305479"
+          url="https://twitter.com/_dilloncoffman_"
+          style={{
+            height: 50,
+            width: 50,
+            marginLeft: 55,
+          }}
+        />
+        <SocialIcon
+          className="my-social-icon no-hover-gradient"
+          bgColor="#305479"
+          url="https://github.com/dilloncoffman"
+          style={{
+            height: 50,
+            width: 50,
+            marginLeft: 10,
+          }}
+        />
+      </Box>
     </Flex>
 
     <Divider borderColor="slate.200" />
 
-    <Heading as="h2" size="xl">
-      Digital Garden{" "}
-      <span role="img" aria-label="Emoji of a seedling">
-        🌱
-      </span>
-    </Heading>
+    <Box mt={[5, 5, 5, 10]} mb={[2, 5, 5, 5]}>
+      <Link
+        fontSize={["1.7rem", "1.8rem", "2rem", "2.25rem"]}
+        fontWeight="bold"
+        as={Link}
+        href="https://joelhooks.com/digital-garden"
+      >
+        Digital Garden{" "}
+        <span role="img" aria-label="Emoji of a seedling">
+          🌱
+        </span>
+      </Link>
+    </Box>
+
     <Text>
       Page {pageContext.humanPageNumber} of {pageContext.numberOfPages}
     </Text>
@@ -118,6 +147,13 @@ Blog.propTypes = {
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
+    profilePic: file(relativePath: { eq: "dillon-pic.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       skip: $skip

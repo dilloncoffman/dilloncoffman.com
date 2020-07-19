@@ -4,7 +4,7 @@ import { Heading, Text, Link, SimpleGrid } from "@chakra-ui/core"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import YouTubeCard from "../components/YouTubeCard"
-import "../css/music.css"
+import "../css/index.css"
 
 const MusicPage = ({ data }) => {
   const videoCount = data.allYoutubeVideo.totalCount
@@ -12,7 +12,7 @@ const MusicPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Music" />
-      <Heading as="h1" size="xl">
+      <Heading as="h1" size="xl" mt={[2, 5, 5, 8]}>
         Music{" "}
         <span role="img" aria-label="Emojis of headphones and a guitar">
           🎧 🎸

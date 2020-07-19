@@ -1,0 +1,37 @@
+.my-social-icon .social-svg:hover {
+  background: #b0dbfc;
+}
+
+.no-hover-gradient {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+@media screen and (max-width: 1123px) {
+  .my-social-icon:first-of-type {
+    margin-left: 50px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .my-social-icon:first-of-type {
+    margin-left: 75px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .my-social-icon:first-of-type {
+    margin-left: 20px !important;
+  }
+}
+
+/* Small only */
+@media screen and (max-width: 360px) {
+  .my-social-icon:first-of-type {
+    margin-left: 10px !important;
+  }
+  .my-social-icon {
+    height: 35px !important;
+    width: 35px !important;
+  }
+}
