@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `dillon coffman`,
@@ -72,6 +76,14 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-source-youtube-v2`,
+      options: {
+        channelId: [process.env.GATSBY_YOUTUBE_CHANNEL_ID],
+        apiKey: process.env.GATSBY_YOUTUBE_API_KEY,
+        maxVideos: 50, // Defaults to 50
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

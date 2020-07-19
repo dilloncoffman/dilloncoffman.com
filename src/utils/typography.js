@@ -28,7 +28,5 @@ fairyGatesTheme.overrideThemeStyles = () => ({
   },
 })
 
-// linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #1ca086 1px, #1ca086 2px, rgba(0, 0, 0, 0) 2px)
-
 const typography = new Typography(fairyGatesTheme)
 export default typography
