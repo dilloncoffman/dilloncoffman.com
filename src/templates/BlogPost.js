@@ -29,10 +29,10 @@ export default function BlogPost({ data }) {
       >
         <Flex
           height={[
-            "17vh", // base
-            "25vh", // 480px upwards
-            "35vh", // 768px upwards
-            "40vh", // 992px upwards
+            "29vh", // base
+            "35vh", // 480px upwards
+            "38vh", // 768px upwards
+            "43vh", // 992px upwards
           ]}
           p={5}
           justifyContent="flex-start"
