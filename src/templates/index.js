@@ -147,7 +147,7 @@ Blog.propTypes = {
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    profilePic: file(relativePath: { eq: "dillon-pic.jpg" }) {
+    profilePic: file(relativePath: { eq: "dillon-memeoji.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 1800) {
           ...GatsbyImageSharpFluid
