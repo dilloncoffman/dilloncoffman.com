@@ -62,7 +62,7 @@ const AboutPage = ({ data }) => {
         I've been playing guitar (yes, the Fisher-Price piece of plastic with
         buttons and sounds totally counts!) and find myself most at ease when
         listening to or playing music. You could say music is my.. ...{" "}
-        <strong>jam</strong>. Sorry for that.
+        <strong>jam</strong>. Sorry about that.
       </Text>
       <Text>
         Outside of music, I find myself hacking on side projects. I've recently
