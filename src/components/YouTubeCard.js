@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Badge, Flex, PseudoBox } from "@chakra-ui/core"
+import { Box, Flex, PseudoBox } from "@chakra-ui/core"
 import { motion } from "framer-motion"
 import moment from "moment"
 import Img from "gatsby-image"
@@ -41,9 +41,6 @@ const YouTubeCard = ({ title, localThumbnail, publishedAt }) => {
       </Flex>
       <Box px={4} py={2}>
         <Box d="flex" justifyContent="center" alignItems="baseline">
-          <Badge rounded="full" px="2" variantColor="slate">
-            Cover
-          </Badge>
           <Box
             color="gray.500"
             fontWeight="semibold"
