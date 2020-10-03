@@ -26,7 +26,7 @@ Check out this week's jam:
 
 Besides watching a lot of courses on Frontend Masters this past weekend, I've mostly been getting ready for development in my classes. In Software Design we're starting with TDD (Test-Driven Development) which requires us to use Java's JUnit unit testing framework. To keep things accessible for everyone since Macs are so expensive☹️, my Mobile Development class just focuses on Android development. So far we've just reviewed OOP concepts in Java since we'll be using Java instead of Kotlin to develop apps. In my Cloud Computing class we've gone over the basic terminology of everything and will get into practical things with AWS next week!
 
-My plan for [PlayRight](https://github.com/dilloncoffman/PlayRight) is still to recreate [my current prototype](https://xd.adobe.com/view/f18a97f9-cf07-4bbe-4dc6-77cee660af36-87bb/) in [Figma](https://www.figma.com/). I'm hoping to find the time this weekend to get that done 💪.
+My plan for [PlayRight](https://github.com/dilloncoffman/PlayRight) is still to recreate [my current prototype](https://xd.adobe.com/view/f18a97f9-cf07-4bbe-4dc6-77cee660af36-87bb/) in [Figma](https://www.figma.com/).
 
 <hr>
 

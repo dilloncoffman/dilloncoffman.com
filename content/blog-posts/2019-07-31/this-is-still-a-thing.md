@@ -51,3 +51,9 @@ What makes Gatsby themes so rad is that if someone wanted to add on to this list
   - [The Ground Up Show](https://overcast.fm/itunes1203518464/the-ground-up-show)
 
   - [Philosophize This!](https://overcast.fm/itunes659155419/philosophize-this)
+
+<hr>
+
+If you enjoy these posts and feel so inclined to support me, I would really appreciate it! Feel free to buy me a coffee 😄
+
+<a href="https://www.buymeacoffee.com/dilloncoffman" target="_blank" rel="noopener"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
