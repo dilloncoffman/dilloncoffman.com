@@ -9,17 +9,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2
         name: "Checkout source code"
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.4
+        uses: actions/setup-node@v1.4.2
         with:
           version: 12.x
 
       - name: Build site
         run: |
-          yarn add v1.22.4
+          yarn install --production
           yarn build
 
       - name: Deploy to Netlify
