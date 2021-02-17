@@ -20,9 +20,8 @@ const AboutPage = ({ data }) => {
       <Text>
         Dillon Coffman is a developer from Pittsburgh, PA. He recently graduated
         in May of 2020 with a Bachelor of Science in Computer Science from
-        Temple University in Philadelphia, PA. He's currently an Associate
-        Developer at Computer Enterprises, Inc. and trying his best to help
-        those around him build an online presence. In his free time he plays{" "}
+        Temple University in Philadelphia, PA. He's currently a Software
+        Developer at Wolfe LLC. In his free time he plays{" "}
         <Link href="https://www.dilloncoffman.com/music">music</Link> on all
         kinds of instruments and tries to read a lot of books on philosophy and
         life. Here he is trying to pet a Philly bookstore cat unsuccessfully:
