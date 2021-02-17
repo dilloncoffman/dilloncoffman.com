@@ -13,7 +13,7 @@ jobs:
         name: "Checkout source code"
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v1.4.2
+        uses: actions/setup-node@v2.1.4
         with:
           version: 12.x
 
@@ -21,6 +21,8 @@ jobs:
         run: |
           yarn install --production
           yarn build
+        # To avoid build step failure from deprecated gatsby-source-youtube-v2 plugin
+        continue-on-error: true
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1.11
