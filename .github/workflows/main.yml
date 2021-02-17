@@ -19,7 +19,7 @@ jobs:
 
       - name: Build site
         run: |
-          yarn install --production
+          yarn install v1.22.4
           yarn build
 
       - name: Deploy to Netlify
