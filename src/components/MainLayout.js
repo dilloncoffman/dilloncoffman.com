@@ -10,12 +10,13 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import { Box } from "@chakra-ui/core"
-import { ThemeProvider } from "emotion-theming"
+import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react"
 import radTheme from "../../rad-theme"
 import Footer from "./Footer"
 
-const Layout = ({ children }) => {
+const extendedRadTheme = extendTheme(radTheme)
+
+const MainLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <ThemeProvider theme={radTheme}>
+    <ChakraProvider theme={extendedRadTheme} resetCSS={false}>
       <Box bg="slate.50" minHeight="100vh" color="black">
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
@@ -37,16 +38,16 @@ const Layout = ({ children }) => {
             padding: `0 1.0875rem 1.45rem`,
           }}
         >
-          <main style={{ paddingTop: 85 }}>{children}</main>
+          <main style={{ paddingTop: 90 }}>{children}</main>
         </div>
         <Footer siteTitle={data.site.siteMetadata.title} />
       </Box>
-    </ThemeProvider>
+    </ChakraProvider>
   )
 }
 
-Layout.propTypes = {
+MainLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default MainLayout

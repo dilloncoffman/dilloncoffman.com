@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Flex, Heading, Link, PseudoBox, Text } from "@chakra-ui/core"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Flex, Heading, Link, Box, Text } from "@chakra-ui/react"
+import MainLayout from "../components/MainLayout"
+import Seo from "../components/Seo"
 
 const AboutPage = ({ data }) => {
   return (
-    <Layout>
-      <SEO title="About" />
+    <MainLayout>
+      <Seo title="About" />
       <Heading as="h1" size="xl" mt={[2, 5, 5, 8]}>
         About{" "}
         <span role="img" aria-label="Emoji of hand waving">
@@ -22,11 +22,14 @@ const AboutPage = ({ data }) => {
         in May of 2020 with a Bachelor of Science in Computer Science from
         Temple University in Philadelphia, PA. He's currently a Software
         Developer at Wolfe LLC. In his free time he plays{" "}
-        <Link href="https://www.dilloncoffman.com/music">music</Link> on all
-        kinds of instruments and tries to read a lot of books on philosophy and
-        life. Here he is trying to pet a Philly bookstore cat unsuccessfully:
+        <Link href="https://www.dilloncoffman.com/music" color="blue.600">
+          music
+        </Link>{" "}
+        on all kinds of instruments and tries to read a lot of books on
+        philosophy and life. Here he is trying to pet a Philly bookstore cat
+        unsuccessfully:
       </Text>
-      <PseudoBox
+      <Box
         bg="white"
         borderWidth="1px"
         borderColor="slate.500"
@@ -50,7 +53,7 @@ const AboutPage = ({ data }) => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
         ></Flex>
-      </PseudoBox>
+      </Box>
       <Heading as="h2" size="lg">
         Hey there!
       </Heading>
@@ -67,7 +70,11 @@ const AboutPage = ({ data }) => {
         Outside of music, I find myself hacking on side projects. I've recently
         set out on a mission to help those in my local community build an online
         presence. So far I've helped a local nonprofit by building them an{" "}
-        <Link href="https://walk-our-watershed.netlify.com" isExternal>
+        <Link
+          href="https://walk-our-watershed.netlify.com"
+          color="blue.600"
+          isExternal
+        >
           event website
         </Link>{" "}
         to raise money and get our community active during COVID-19. Thanks to
@@ -75,15 +82,19 @@ const AboutPage = ({ data }) => {
         curiosity, I've had the opportunity to work with all kinds of
         technology. From writing C programs to developing Android applications
         to building web apps in the cloud, you can find it all on{" "}
-        <Link href="https://github.com/dilloncoffman" isExternal>
+        <Link
+          href="https://github.com/dilloncoffman"
+          color="blue.600"
+          isExternal
+        >
           my GitHub
         </Link>
         . Currently I'm interested in building web apps with{" "}
-        <Link href="https://www.gatsbyjs.com/" isExternal>
+        <Link href="https://www.gatsbyjs.com/" color="blue.600" isExternal>
           Gatsby
         </Link>{" "}
         and serverless technologies like{" "}
-        <Link href="https://docs.amplify.aws/" isExternal>
+        <Link href="https://docs.amplify.aws/" color="blue.600" isExternal>
           AWS Amplify
         </Link>
         .
@@ -94,9 +105,13 @@ const AboutPage = ({ data }) => {
           👋
         </span>
         ? Want to talk tech, music or philosophy? Feel free to reach out any
-        time by <Link href="mailto:dillcoff@gmail.com">emailing me</Link>.
+        time by{" "}
+        <Link color="blue.600" href="mailto:dillcoff@gmail.com">
+          emailing me
+        </Link>
+        .
       </Text>
-    </Layout>
+    </MainLayout>
   )
 }
 

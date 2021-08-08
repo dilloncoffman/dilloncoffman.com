@@ -1,27 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import {
-  Badge,
-  Box,
-  Divider,
-  Flex,
-  Heading,
-  Link,
-  PseudoBox,
-  Text,
-} from "@chakra-ui/core"
+import MainLayout from "../components/MainLayout"
+import Seo from "../components/Seo"
+import { Badge, Box, Flex, Heading, Link, Text } from "@chakra-ui/react"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
 
   return (
-    <Layout>
-      <SEO title={post.frontmatter.title} />
-      <PseudoBox
+    <MainLayout>
+      <Seo title={post.frontmatter.title} />
+      <Box
         bg="white"
-        borderWidth="1px"
         borderColor="slate.500"
         rounded="lg"
         overflow="hidden"
@@ -45,14 +35,13 @@ export default function BlogPost({ data }) {
         >
           {post.frontmatter.coverCreditName ? (
             <Box>
-              <Badge fontSize="0.75rem" variantColor="green">
+              <Badge fontSize="0.75rem" colorScheme="green">
                 Credit:{" "}
               </Badge>
               <Link
                 bg="white"
                 ml={3}
                 p={1}
-                borderWidth="1px"
                 borderColor="slate.500"
                 rounded="sm"
                 fontSize={13}
@@ -73,22 +62,27 @@ export default function BlogPost({ data }) {
           <Heading as="h1" mt={0}>
             {post.frontmatter.title}
           </Heading>
-          <Flex color="slate.400" fontSize="sm" fontWeight="bold" mb={2}>
-            <Text as="span">{post.timeToRead} minute read</Text>
-            <Divider borderColor="slate.200" orientation="vertical" />
+          <Flex
+            color="slate.400"
+            fontSize="sm"
+            fontWeight="bold"
+            mb={2}
+            justifyContent="space-between"
+          >
             <Text as="span" textTransform="uppercase">
               {post.frontmatter.date}
             </Text>
+            <Text as="span">{post.timeToRead} minute read</Text>
           </Flex>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Box>
-      </PseudoBox>
-    </Layout>
+      </Box>
+    </MainLayout>
   )
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

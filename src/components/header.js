@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Heading, Flex } from "@chakra-ui/core"
+import { Heading, Flex } from "@chakra-ui/react"
 import DrawerMenu from "./DrawerMenu"
 
-const Header = props => {
+const Header = ({ siteTitle }) => {
   return (
     <header
       style={{
@@ -12,7 +12,7 @@ const Header = props => {
         position: "fixed",
         right: 0,
         left: 0,
-        zIndex: 999,
+        zIndex: 1,
       }}
     >
       <Flex
@@ -23,7 +23,6 @@ const Header = props => {
         padding="1rem"
         bg="slate.800"
         color="white"
-        {...props}
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"-.1rem"} m={0}>
@@ -38,7 +37,7 @@ const Header = props => {
                   "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #B3DEFF 1px, #B3DEFF 2px, rgba(0, 0, 0, 0) 20px)",
               }}
             >
-              {props.siteTitle}
+              {siteTitle}
             </Link>
           </Heading>
         </Flex>

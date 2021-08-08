@@ -1,12 +1,12 @@
 import React from "react"
-import { Heading, Text } from "@chakra-ui/core"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Heading, Text } from "@chakra-ui/react"
+import MainLayout from "../components/MainLayout"
+import Seo from "../components/Seo"
 
 const NotesPage = () => {
   return (
-    <Layout>
-      <SEO title="Notes" />
+    <MainLayout>
+      <Seo title="Notes" />
       <Heading as="h1" size="xl" mt={[2, 5, 5, 8]}>
         Notes
         <span role="img" aria-label="Emoji of a pencil">
@@ -19,7 +19,7 @@ const NotesPage = () => {
           😄
         </span>
       </Text>
-    </Layout>
+    </MainLayout>
   )
 }
 

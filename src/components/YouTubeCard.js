@@ -1,10 +1,10 @@
 import React from "react"
-import { Box, Flex, PseudoBox } from "@chakra-ui/core"
+import { Box, Flex } from "@chakra-ui/react"
 import { motion } from "framer-motion"
 import moment from "moment"
 import Img from "gatsby-image"
 
-const MotionCard = motion.custom(PseudoBox)
+const MotionCard = motion(Box)
 
 const YouTubeCard = ({ title, localThumbnail, publishedAt }) => {
   return (

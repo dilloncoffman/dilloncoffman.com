@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import { Link as GatsbyLink } from "gatsby"
 import {
   Box,
@@ -8,27 +8,38 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Icon,
+  Flex,
   IconButton,
-  PseudoBox,
   Stack,
+  Text,
   useDisclosure,
-} from "@chakra-ui/core"
+} from "@chakra-ui/react"
+import AstronautIcon from "./icons/AstronautIcon"
+import HomeIcon from "./icons/HomeIcon"
+import MusicIcon from "./icons/MusicIcon"
+import CustomMenuIcon from "./icons/CustomMenuIcon"
 
 const DrawerMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const navBtnRef = useRef()
   const [placement] = useState("right")
 
   return (
     <>
       <IconButton
+        ref={navBtnRef}
         style={{ backgroundColor: "transparent" }}
         variant="outline"
         aria-label="Open navigation menu"
-        icon="menu"
+        icon={<CustomMenuIcon />}
         onClick={onOpen}
       />
-      <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
+      <Drawer
+        placement={placement}
+        onClose={onClose}
+        isOpen={isOpen}
+        finalFocusRef={navBtnRef}
+      >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton
@@ -47,8 +58,9 @@ const DrawerMenu = () => {
           </DrawerHeader>
           <DrawerBody>
             <Stack spacing={8} textTransform="uppercase">
-              <PseudoBox
+              <Box
                 py={2}
+                m={0}
                 as={GatsbyLink}
                 to="/"
                 color="#001626"
@@ -63,13 +75,14 @@ const DrawerMenu = () => {
                   color: "#004173",
                 }}
               >
-                <Box px={4}>
-                  <Icon name="home" mr="15px" size="30px" />
-                  Home
-                </Box>
-              </PseudoBox>
-              <PseudoBox
+                <Flex px={4} alignItems="center">
+                  <HomeIcon mr="15px" boxSize="30px" />
+                  <Text mb={0}>Home</Text>
+                </Flex>
+              </Box>
+              <Box
                 py={2}
+                mt={0}
                 as={GatsbyLink}
                 to="/about"
                 color="#001626"
@@ -84,13 +97,14 @@ const DrawerMenu = () => {
                   color: "#B3D004173EFF",
                 }}
               >
-                <Box px={4}>
-                  <Icon name="astronaut" mr="15px" size="30px" />
-                  About
-                </Box>
-              </PseudoBox>
-              <PseudoBox
+                <Flex px={4} alignItems="center">
+                  <AstronautIcon mr="15px" boxSize="30px" />
+                  <Text mb={0}>About</Text>
+                </Flex>
+              </Box>
+              <Box
                 py={2}
+                mt={0}
                 as={GatsbyLink}
                 to="/music"
                 color="#001626"
@@ -105,32 +119,11 @@ const DrawerMenu = () => {
                   color: "#004173",
                 }}
               >
-                <Box px={4}>
-                  <Icon name="music" mr="15px" size="30px" />
-                  Music
-                </Box>
-              </PseudoBox>
-              <PseudoBox
-                py={2}
-                as={GatsbyLink}
-                to="/notes"
-                color="#001626"
-                _hover={{ bg: "gray.200", borderRadius: 5, color: "#004173" }}
-                _focus={{
-                  outline: "none",
-                  bg: "gray.200",
-                  boxShadow: "outline",
-                  borderRadius: 5,
-                  backgroundImage:
-                    "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #B3DEFF 1px, #B3DEFF 2px, rgba(0, 0, 0, 0) 20px)",
-                  color: "#004173",
-                }}
-              >
-                <Box px={4}>
-                  <Icon name="notes" mr="15px" size="30px" />
-                  Notes
-                </Box>
-              </PseudoBox>
+                <Flex px={4} alignItems="center">
+                  <MusicIcon mr="15px" boxSize="30px" />
+                  <Text mb={0}>Music</Text>
+                </Flex>
+              </Box>
             </Stack>
           </DrawerBody>
         </DrawerContent>

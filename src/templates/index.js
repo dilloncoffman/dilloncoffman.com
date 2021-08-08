@@ -1,28 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import MainLayout from "../components/MainLayout"
+import Seo from "../components/Seo"
 import Pager from "../components/Pager"
-import {
-  Box,
-  Divider,
-  Heading,
-  Text,
-  Flex,
-  PseudoBox,
-  Link,
-} from "@chakra-ui/core"
+import { Box, Divider, Heading, Text, Flex, Link } from "@chakra-ui/react"
 import { Link as GatsbyLink, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { motion } from "framer-motion"
 import { SocialIcon } from "react-social-icons"
 import "../css/index.css"
 
-const MotionCard = motion.custom(PseudoBox)
+const MotionCard = motion(Box)
 
 const Blog = ({ data, pageContext }) => (
-  <Layout>
-    <SEO title="Home" image="/../../daisydillon.jpg" />
+  <MainLayout>
+    <Seo title="Home" image="/../../daisydillon.jpg" />
     <Img
       fluid={data.profilePic.childImageSharp.fluid}
       imgStyle={{
@@ -43,55 +35,55 @@ const Blog = ({ data, pageContext }) => (
       alignItems="center"
       flexDirection="column"
       mb={30}
+      mw={310}
     >
-      {/* <Img
-          fluid={data.profilePic.childImageSharp.fluid}
-          imgStyle={{ height: 200, width: 200, borderRadius: 100 }}
-          style={{
-            paddingTop: 100,
-            maxHeight: 200,
-          }}
-        /> */}
-
       <Heading as="h1" size="2xl" mt={[2, 5, 5, 5]}>
         Dillon Coffman
       </Heading>
-
-      <Box>
-        <Text display="inline" fontWeight="bold" fontSize={[17, 17, 22, 24]}>
-          Developer &amp; Musician
-        </Text>
-        <SocialIcon
-          className="my-social-icon no-hover-gradient"
-          bgColor="#305479"
-          url="https://twitter.com/_dilloncoffman_"
-          style={{
-            height: 50,
-            width: 50,
-            marginLeft: 55,
-          }}
-        />
-        <SocialIcon
-          className="my-social-icon no-hover-gradient"
-          bgColor="#305479"
-          url="https://github.com/dilloncoffman"
-          style={{
-            height: 50,
-            width: 50,
-            marginLeft: 10,
-          }}
-        />
-      </Box>
+      <Flex
+        justifyContent={["center", "center", "space-between", "space-between"]}
+        w={["100%", 309, 409, 409]}
+      >
+        <Flex alignItems="center">
+          <Text fontWeight="bold" fontSize={[17, 17, 22, 24]} m={0}>
+            Developer &amp; Musician
+          </Text>
+        </Flex>
+        <Box>
+          <SocialIcon
+            className="my-social-icon no-hover-gradient"
+            bgColor="#305479"
+            url="https://twitter.com/_dilloncoffman_"
+            style={{
+              height: 50,
+              width: 50,
+              marginLeft: 55,
+            }}
+          />
+          <SocialIcon
+            className="my-social-icon no-hover-gradient"
+            bgColor="#305479"
+            url="https://github.com/dilloncoffman"
+            style={{
+              height: 50,
+              width: 50,
+              marginLeft: 10,
+            }}
+          />
+        </Box>
+      </Flex>
     </Flex>
 
-    <Divider borderColor="slate.200" />
+    <Divider borderColor="slate.200" mb={30} />
 
-    <Box mt={[5, 5, 5, 10]} mb={[2, 5, 5, 5]}>
+    <Box mb={[2, 5, 5, 5]}>
       <Link
         fontSize={["1.7rem", "1.8rem", "2rem", "2.25rem"]}
         fontWeight="bold"
         as={Link}
         href="https://joelhooks.com/digital-garden"
+        color="blue.600"
+        isExternal
       >
         Digital Garden{" "}
         <span role="img" aria-label="Emoji of a seedling">
@@ -124,12 +116,17 @@ const Blog = ({ data, pageContext }) => (
             <Heading as="h3" size="lg" color="slate.800" mt="1.45rem">
               {node.frontmatter.title}
             </Heading>
-            <Flex color="slate.400" fontSize="sm" fontWeight="bold" mb={2}>
-              <Text as="span">{node.timeToRead} minute read</Text>
-              <Divider borderColor="slate.200" orientation="vertical" />
+            <Flex
+              color="slate.400"
+              fontSize="sm"
+              fontWeight="bold"
+              mb={2}
+              justifyContent="space-between"
+            >
               <Text as="span" textTransform="uppercase">
                 {node.frontmatter.date}
               </Text>
+              <Text as="span">{node.timeToRead} minute read</Text>
             </Flex>
             <Text>{node.excerpt}</Text>
           </Box>
@@ -137,7 +134,7 @@ const Blog = ({ data, pageContext }) => (
       </GatsbyLink>
     ))}
     <Pager pageContext={pageContext} />
-  </Layout>
+  </MainLayout>
 )
 
 Blog.propTypes = {
@@ -146,7 +143,7 @@ Blog.propTypes = {
 }
 
 export const query = graphql`
-  query($skip: Int!, $limit: Int!) {
+  query ($skip: Int!, $limit: Int!) {
     profilePic: file(relativePath: { eq: "dillon-memeoji.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 1800) {

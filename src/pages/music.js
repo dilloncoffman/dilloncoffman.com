@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Heading, Text, Link, SimpleGrid } from "@chakra-ui/core"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Heading, Text, Link, SimpleGrid } from "@chakra-ui/react"
+import MainLayout from "../components/MainLayout"
+import Seo from "../components/Seo"
 import YouTubeCard from "../components/YouTubeCard"
 import "../css/index.css"
 
@@ -10,8 +10,8 @@ const MusicPage = ({ data }) => {
   const videoCount = data.allYoutubeVideo.totalCount
   const videos = data.allYoutubeVideo.nodes
   return (
-    <Layout>
-      <SEO title="Music" />
+    <MainLayout>
+      <Seo title="Music" />
       <Heading as="h1" size="xl" mt={[2, 5, 5, 8]}>
         Music{" "}
         <span role="img" aria-label="Emojis of headphones and a guitar">
@@ -26,12 +26,13 @@ const MusicPage = ({ data }) => {
             href={`https://www.youtube.com/watch?v=${video.videoId}`}
             isExternal
             className="no-hover-gradient"
+            bgImage="none"
           >
             <YouTubeCard {...video} />
           </Link>
         ))}
       </SimpleGrid>
-    </Layout>
+    </MainLayout>
   )
 }
 

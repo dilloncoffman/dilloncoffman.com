@@ -11,6 +11,9 @@ module.exports = {
     image: `https://pbs.twimg.com/profile_images/1266034010901397506/RSZmaVNL_400x400.jpg`,
     url: `https://www.dilloncoffman.com`,
   },
+  flags: {
+    DEV_SSR: false, // https://github.com/gatsbyjs/gatsby/discussions/28138
+  },
   plugins: [
     "gatsby-plugin-react-helmet",
     {
@@ -66,10 +69,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-chakra-ui`,
+      resolve: "@chakra-ui/gatsby-plugin",
       options: {
-        isResettingCSS: false,
-        isUsingColorMode: false,
+        resetCSS: false,
       },
     },
     {
@@ -79,7 +81,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-youtube-v2`,
+      resolve: `gatsby-source-youtube-v3`,
       options: {
         channelId: [process.env.GATSBY_YOUTUBE_CHANNEL_ID],
         apiKey: process.env.GATSBY_YOUTUBE_API_KEY,
