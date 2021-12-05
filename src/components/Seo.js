@@ -5,7 +5,7 @@ import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
 const query = graphql`
-  query SEO {
+  query Seo {
     site {
       siteMetadata {
         defaultTitle: title
@@ -74,7 +74,7 @@ const Seo = ({ title, description, image, article }) => {
     </Helmet>
   )
 }
-export default Seo
+
 Seo.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
@@ -87,3 +87,5 @@ Seo.defaultProps = {
   image: null,
   article: false,
 }
+
+export default Seo
