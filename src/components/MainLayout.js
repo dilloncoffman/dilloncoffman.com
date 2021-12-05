@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./Header"
 import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react"
 import radTheme from "../../rad-theme"
 import Footer from "./Footer"
