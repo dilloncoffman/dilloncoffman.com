@@ -53,7 +53,7 @@ const Blog = ({ data, pageContext }) => (
           <SocialIcon
             className="my-social-icon no-hover-gradient"
             bgColor="#305479"
-            url="https://twitter.com/_dilloncoffman_"
+            url="https://twitter.com/therealdilln"
             style={{
               height: 50,
               width: 50,
