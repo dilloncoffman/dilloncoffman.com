@@ -28,7 +28,7 @@
     "gatsby-remark-responsive-iframe": "^4.8.0",
     "gatsby-source-filesystem": "^3.11.0",
     "gatsby-source-youtube-v3": "^3.0.1",
-    "gatsby-transformer-remark": "^4.8.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.11.0",
     "moment": "^2.27.0",
     "prismjs": "^1.21.0",
